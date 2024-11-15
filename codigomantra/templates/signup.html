@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form action="" method = "post">
+            {% csrf_token %}
+
+            <label >
+                Username:
+            </label>
+            <input type="text"  name="name" 
+                placeholder="Enter your Username" required>
+
+
+            <label for="Email">
+                email:
+            </label>
+            <input type="email"  name="email" 
+                placeholder="Enter your email" required>
+
+
+            <label for="password">
+                Password:
+            </label>
+            <input type="password" id="password" name="pass" 
+                placeholder="Enter your Password" required>
+
+             <label for="password">
+                Re-password:
+            </label>
+            <input type="password" id="password" name="re-pass" 
+                placeholder="Enter re-assword" required>
+
+            <div class="wrap">
+                <button type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+        
+        <p>Not registered?
+            <a href="#" style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
